@@ -46,21 +46,23 @@ cd Basics-for-RAG
 
 ```
 ## 📂 Project Structure
-Basics-for-RAG/
-│
-├── ingestion/
-│ ├── xsl_extractor.py # Process Excel/CSV into chunks
-│ └── pdf_extractor.py # (Future) Process PDFs into chunks
-│
-├── data/ # Sample datasets
-│ └── algeria_macro_economic_kpis.xls
-│
-├── notebooks/ # Jupyter/Colab exploration
-│ └── rag_demo.ipynb
-│
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
 
+```
+    Basics-for-RAG/
+    │
+    ├── ingestion/
+    │ ├── xsl_extractor.py # Process Excel/CSV into chunks
+    │ └── pdf_extractor.py # (Future) Process PDFs into chunks
+    │
+    ├── data/ # Sample datasets
+    │ └── algeria_macro_economic_kpis.xls
+    │
+    ├── notebooks/ # Jupyter/Colab exploration
+    │ └── rag_demo.ipynb
+    │
+    ├── requirements.txt # Python dependencies
+    └── README.md # Project documentation
+```
 ## Install dependencies
 
 ```bash
