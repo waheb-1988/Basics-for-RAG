@@ -1,6 +1,6 @@
-# 🧠 NLP Basics for RAG
+# 🧠 Basics for RAG
 
-This repository contains the code and resources for **Series 1: NLP Basics for RAG** from the LinkedIn article *"Mastering Chatbots with RAG: From Theory to Production"* by **PhD. Abdelouaheb Hocine**.
+This repository contains the code and resources for **Basics for RAG** from the LinkedIn article *"Mastering Chatbots with RAG: From Theory to Production"* by **PhD. Abdelouaheb Hocine**.
 
 ## 📖 Overview
 This series is designed especially for students, junior data scientists, or anyone curious about how modern AI chatbots really work under the hood. Whether you're looking to understand RAG for a university project, a startup idea, or to upskill for your next job this is for you.
