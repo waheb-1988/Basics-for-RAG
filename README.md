@@ -3,15 +3,37 @@
 This repository contains the code and resources for **Series 1: NLP Basics for RAG** from the LinkedIn article *"Mastering Chatbots with RAG: From Theory to Production"* by **PhD. Abdelouaheb Hocine**.
 
 ## 📖 Overview
-Before diving into Retrieval-Augmented Generation (RAG), it’s important to understand the fundamentals of **Natural Language Processing (NLP)**.  
-This project introduces:
-- **Tokenization** (splitting text into smaller units)
-- **Stopwords removal**
-- **Vectorization (Bag of Words)**
-- **Document similarity with cosine similarity**
+This series is designed especially for students, junior data scientists, or anyone curious about how modern AI chatbots really work under the hood. Whether you're looking to understand RAG for a university project, a startup idea, or to upskill for your next job this is for you.
 
-These are the first building blocks toward embeddings and vector databases, which are essential for RAG.
+Each post (shared daily or weekly) will cover one key concept from indexing, embeddings, and vector databases to language models, prompt engineering, and real-world deployment. I’ll share code, examples, and tools and open the floor for questions, discussions, and collaboration in the comments.
 
+## 📖 Literature Review: 
+
+The concept of Retrieval-Augmented Generation (RAG) was first introduced by Patrick Lewis et al. in 2020 in their influential paper titled "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks". This work proposed a novel architecture that combines a retrieval modulewhich fetches relevant documents from an external knowledge base with a generative language model to produce grounded, informative answers. By integrating retrieval directly into the generation process, RAG significantly improved performance on tasks like open domain question answering and reduced the tendency of large language models to "hallucinate" facts, marking a key advancement in knowledge-intensive NLP applications.
+
+## 📖 Series Plan:
+
+- **Series 1:** NLP Basics for RAG
+
+- **Series 2:** Data Collection & Preprocessing (PDFs, Word files, CSVs)
+
+- **Series 3:** Embeddings & Vectorization
+
+- **Series 4:** Similarity Search
+
+- **Series 5:** Vector Databases
+
+- **Series 6:** LLM Models
+
+- **Series 7:** Prompt Engineering
+
+- **Series 8:** Orchestration & Tooling (LangChain, LlamaIndex)
+
+- **Series 9:** Testing & Evaluation
+
+- **Series 10:** Fine-Tuning & Optimization
+
+- **Series 11:** Deployment & Production
 ---
 
 ## ⚙️ Installation
@@ -19,5 +41,29 @@ These are the first building blocks toward embeddings and vector databases, whic
 Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/NLP-Basics-for-RAG.git
-cd NLP-Basics-for-RAG
+git clone https://github.com/your-username/Basics-for-RAG.git
+cd Basics-for-RAG
+
+```
+## 📂 Project Structure
+Basics-for-RAG/
+│
+├── ingestion/
+│ ├── xsl_extractor.py # Process Excel/CSV into chunks
+│ └── pdf_extractor.py # (Future) Process PDFs into chunks
+│
+├── data/ # Sample datasets
+│ └── algeria_macro_economic_kpis.xls
+│
+├── notebooks/ # Jupyter/Colab exploration
+│ └── rag_demo.ipynb
+│
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
+
+## Install dependencies
+
+```bash
+
+pip install -r requirements.txt
+```

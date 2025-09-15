@@ -1,2 +1,21 @@
 nltk==3.9
 scikit-learn==1.5.1
+
+# Core dependencies
+langchain>=0.2.0
+python-dotenv>=1.0.0
+pandas>=2.0.0
+
+# PDF processing
+pypdf>=3.9.0
+
+# Excel & CSV support
+openpyxl>=3.1.0
+xlrd>=2.0.1
+
+# Docling (document parsing & chunking)
+langchain-docling>=0.1.1
+docling>=0.3.0
+
+# Text splitting
+tiktoken>=0.5.0
