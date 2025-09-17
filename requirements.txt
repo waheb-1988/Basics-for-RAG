@@ -1,25 +1,35 @@
+# ===== Core =====
+numpy>=1.24
+pandas>=2.0.0
+python-dotenv>=1.0.0
+tiktoken>=0.5.0
 nltk==3.9
 scikit-learn==1.5.1
 
-# Core dependencies
+# ===== LangChain stack =====
 langchain>=0.2.0
-python-dotenv>=1.0.0
-pandas>=2.0.0
+langchain-huggingface>=0.1.0    # use this instead of deprecated langchain_community embeddings
+langchain-community>=0.2.0      # optional fallback / other community loaders
 
-# PDF processing
-pypdf>=3.9.0
+# ===== Vector DB =====
+pymilvus==2.4.*                 # matches your SDK usage
 
-# Excel & CSV support
-openpyxl>=3.1.0
-xlrd>=2.0.1
-
-# Docling (document parsing & chunking)
-langchain-docling>=0.1.1
+# ===== Docling (multi-format parsing + chunking) =====
 docling>=0.3.0
+langchain-docling>=0.1.1
+pypdf>=3.9.0                    # extra PDF support used by ecosystem
+pypdfium2>=4.20.0               # docling backend often benefits from this
+openpyxl>=3.1.0                 # Excel
+xlrd>=2.0.1                     # Legacy .xls support
 
-# Text splitting
-tiktoken>=0.5.0
+# ===== HF / Transformers stack for embeddings =====
+transformers>=4.41.0
+huggingface-hub>=0.22.0
+sentence-transformers>=2.7.0
+accelerate>=0.29.0
+torch>=2.3.0                    # CPU build via pip by default; for CUDA follow pytorch.org install command
+Pillow>=9.4.0                   # image ops used by several loaders/pipelines
 
-# Embeddings & LLM integrations
+# ===== Optional LLM vendors you listed =====
 langchain_mistralai>=0.1.0
 langchain_groq>=0.1.0
